@@ -31,7 +31,6 @@ const customIcons = {
 
 const Forecast = ({ temperatureUnit, city }) => {
   const [forecastData, setForecastData] = useState([]);
-
   useEffect(() => {
     const apiKey = "241ff083e917bb12t439a7aco17d1be3";
     const apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
