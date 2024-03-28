@@ -1,5 +1,5 @@
 body {
-  background: #f4f0e4;
+  background: #f4f0e4 !important;
   font-family: "Raleway", sans-serif;
 }
 
@@ -38,8 +38,12 @@ footer a {
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
+.search-form {
+  display: flex;
+}
 
 .search-input {
+  flex: 1;
   background-color: #f9f6ed;
   border: none;
   color: #524d4d;

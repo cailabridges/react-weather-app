@@ -4,6 +4,8 @@ import ReactAnimatedWeather from "react-animated-weather";
 import "./Weather.css";
 import worldlyWeatherLogo from "./images/worldly-weather.svg";
 import Forecast from "./Forecast";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -123,8 +125,10 @@ const Weather = () => {
         />
       </div>
       <div className="weather-app-container">
-        <header>
-          <form id="search-form" onSubmit={handleSearchSubmit}>
+        
+        <header >
+          
+          <form className="search-form" id="search-form" onSubmit={handleSearchSubmit}>
             <input
               type="search"
               placeholder="Enter a city.."
@@ -139,7 +143,9 @@ const Weather = () => {
               id="search-button"
             />
           </form>
+          
         </header>
+        
         <main>
           {weatherData && (
             <div className="current-weather-container">
